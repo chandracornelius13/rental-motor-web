@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking BMW S1000RR | C&C Rent</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-link">
+        <img src="logo (2).png" alt="C&C Rent Logo" class="logo-img" />
+      </a>
+    </header>
+
+    <section class="booking-section">
+      <div class="booking-container">
+        <div class="booking-form">
+          <h2>Booking BMW S1000RR</h2>
+          <p>Silakan lengkapi data di bawah ini untuk reservasi unit.</p>
+
+          <form id="sewaForm" data-motor="BMW S1000RR" data-harga="1500000">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" id="nama" placeholder="Nama sesuai KTP" required />
+            </div>
+
+            <div class="form-group">
+              <label>Nomor WhatsApp</label>
+              <input type="number" id="wa" placeholder="Contoh: 08123456789" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Tanggal Mulai Sewa</label>
+                <input type="date" id="tanggal" required />
+              </div>
+              <div class="form-group">
+                <label>Durasi (Hari)</label>
+                <input type="number" id="durasi" value="1" min="1" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Metode Pengambilan</label>
+              <select id="metode">
+                <option value="Ambil di Garage">Ambil Sendiri di Garage (Bekasi)</option>
+                <option value="Diantar ke Lokasi">Diantar ke Lokasi (+Biaya Ongkir)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-utama full-width">Booking Sekarang &rarr;</button>
+          </form>
+        </div>
+
+        <div class="booking-summary">
+          <h3>Ringkasan Pesanan</h3>
+
+          <div class="summary-card">
+            <img src="BMWS1000RR.png" alt="BMW S1000RR" />
+            <h4>BMW S1000RR</h4>
+            <p class="price-tag">Rp 1.500.000 / Hari</p>
+          </div>
+
+          <div class="total-section">
+            <div class="row">
+              <span>Subtotal</span>
+              <span>Rp <span id="subTotal">1.500.000</span></span>
+            </div>
+            <hr />
+            <div class="row total">
+              <span>Total Estimasi</span>
+              <span class="total-price">Rp <span id="totalBayar">1.500.000</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 C&C Rent. Designed by Chandra.</p>
+    </footer>
+
+    <script src="booking.js"></script>
+  </body>
+</html>

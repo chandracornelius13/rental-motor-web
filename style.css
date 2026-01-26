@@ -1,0 +1,564 @@
+/* ======= RESET & GLOBAL ======= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212; /* Hitam pekat */
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* Scroll halus */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======= HEADER ======= */
+header {
+  background-color: rgba(18, 18, 18, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(180, 76, 60, 0.6); /* Garis bawah merah transparan */
+  box-shadow: 0 5px 25px rgba(231, 76, 60, 0.3); /* Cahaya menyebar ke bawah */
+  backdrop-filter: blur(5px); /* Efek blur di belakang navbar (opsional, biar modern) */
+}
+
+/* Style untuk Logo Gambar Baru */
+.logo-link {
+  display: flex; /* Agar rata tengah vertikal */
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;  /* Atur tinggi logo agar pas di navbar */
+  width: auto;   /* Lebar menyesuaikan otomatis agar tidak gepeng */
+  transition: 0.3s; /* Efek halus saat di-hover */
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.05); /* Sedikit membesar saat kursor diarahkan */
+  filter: drop-shadow(0 0 5px rgba(231, 76, 60, 0.5)); /* Efek glow merah tipis di sekeliling gambar */
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #e74c3c; /* Merah saat hover */
+}
+
+/* ======= HERO SECTION (CINEMATIC) ======= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full layar */
+  background-image: url("hero.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overlay gelap agar teks terbaca */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), #121212);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.btn-utama {
+  padding: 15px 40px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.btn-utama:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* ======= FEATURES (WHY CHOOSE US) ======= */
+#features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  text-align: center;
+  background: #252525;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  border-bottom: 3px solid #e74c3c;
+}
+
+.feature-item .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.feature-item p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ======= PRODUK SECTION ======= */
+#produk {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-title p {
+  color: #888;
+  margin-bottom: 40px;
+}
+
+/* Search Box */
+.search-box {
+  margin-bottom: 50px;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: 1px solid #333;
+  background-color: #252525;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #e74c3c;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.2);
+}
+
+/* Grid Container */
+.produk-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Card Design */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 15px;
+  width: 320px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  border-color: #444;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.price {
+  color: #e74c3c;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.price .per-day {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.btn-sewa {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.card:hover .btn-sewa {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+/* ======= TENTANG KAMI ======= */
+#tentang {
+  background-color: #1a1a1a;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.tentang-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.info-box {
+  max-width: 400px;
+  text-align: left;
+}
+
+.info-box h3 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.info-box p, .kontak-list li {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.kontak-list {
+  list-style: none;
+  padding: 0;
+}
+
+.kontak-list li {
+  margin-bottom: 10px;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ======= ANIMASI ======= */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======= MEDIA QUERY (HP) ======= */
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 32px;
+  }
+  
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  nav {
+    margin-top: 15px;
+  }
+
+  .produk-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ======= HALAMAN BOOKING ======= */
+.booking-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 90vh; /* Agar pas di layar */
+}
+
+.booking-container {
+  display: flex;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Kolom Kiri (Form) */
+.booking-form {
+  padding: 40px;
+  flex: 1.5;
+  border-right: 1px solid #333;
+}
+
+.booking-form h2 { color: #fff; margin-bottom: 10px; }
+.booking-form p { color: #888; margin-bottom: 30px; font-size: 14px; }
+
+.form-group { margin-bottom: 20px; }
+.form-row { display: flex; gap: 20px; }
+.form-row .form-group { flex: 1; }
+
+label { display: block; color: #ddd; margin-bottom: 8px; font-size: 14px; }
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #e74c3c; /* Merah Fokus */
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.2);
+}
+
+.full-width { width: 100%; margin-top: 10px; cursor: pointer; border: none; }
+
+/* Kolom Kanan (Summary) */
+.booking-summary {
+  padding: 40px;
+  flex: 1;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-summary h3 { color: #e74c3c; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+.summary-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+}
+
+.summary-card h4 { color: #fff; margin: 0; font-size: 18px; }
+.price-tag { color: #aaa; margin-top: 5px; font-size: 14px; }
+
+.total-section { margin-top: auto; padding-top: 20px; }
+.row { display: flex; justify-content: space-between; color: #bbb; margin-bottom: 10px; font-size: 14px; }
+.total { color: #fff; font-weight: bold; font-size: 18px; margin-top: 10px; }
+.total-price { color: #e74c3c; }
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .booking-container { flex-direction: column-reverse; }
+  .booking-form { border-right: none; }
+}
+
+/* ======= POPUP HYBRID (CARD + RECEIPT) ======= */
+
+/* 1. LAYAR BELAKANG */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* 2. KARTU PEMBUNGKUS (Outer Card) */
+.booking-card-wrapper {
+  background: #1e1e1e; /* Warna Gelap Mewah */
+  width: 380px;
+  border-radius: 20px;
+  padding: 30px; /* Jarak antara kartu dan struk */
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+  text-align: center;
+  border: 1px solid #333;
+  
+  /* Animasi Bouncy */
+  transform: scale(0.7);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-overlay.show .booking-card-wrapper {
+  transform: scale(1);
+}
+
+/* 3. KERTAS STRUK (Inner Receipt) */
+.receipt-paper {
+  background-color: #fff;
+  padding: 20px;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace; /* Font Kasir */
+  text-align: left;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  
+  /* Efek Kertas Potong (Zigzag) di Bawah */
+  background-image: linear-gradient(135deg, #fff 50%, transparent 50%),
+                    linear-gradient(45deg, #fff 50%, transparent 50%);
+  background-position: bottom;
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+  padding-bottom: 40px; /* Ruang untuk zigzag */
+}
+
+/* Lubang Kertas (Hiasan di atas) */
+.receipt-paper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px; height: 15px;
+  background-color: #1e1e1e; /* Sama dengan warna card wrapper */
+  border-radius: 50%;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+/* Konten Struk */
+.receipt-header { text-align: center; border-bottom: 2px dashed #000; padding-bottom: 10px; margin-bottom: 15px; }
+.receipt-header h2 { font-size: 20px; margin: 0; font-weight: bold; letter-spacing: 1px; }
+.receipt-header span { font-size: 10px; color: #555; }
+
+.receipt-item { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
+.receipt-total { border-top: 2px dashed #000; margin-top: 10px; padding-top: 10px; font-weight: bold; font-size: 16px; }
+
+.barcode {
+  text-align: center; margin-top: 15px; letter-spacing: 3px; font-size: 10px; opacity: 0.7;
+}
+
+/* 4. TOMBOL TUTUP DI KARTU */
+.btn-close-card {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+  transition: 0.3s;
+}
+
+.btn-close-card:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.success-text {
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 15px;
+}
