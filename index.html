@@ -1,181 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C&C Rent | Rental Moge Premium</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C&C Rent | Rental Moge Premium</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-link">
+        <img src="/assets/images/logo (2).png" alt="C&C Rent Logo" class="logo-img" />
+      </a>
+      <nav>
+        <a href="#home">Beranda</a>
+        <a href="#produk">Koleksi</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+    </header>
 
-  <header>
-    <a href="index.html" class="logo-link">
-    <img src="logo (2).png" alt="C&C Rent Logo" class="logo-img">
-    <nav>
-      <a href="#home">Beranda</a>
-      <a href="#produk">Koleksi</a>
-      <a href="#tentang">Tentang</a>
-    </nav>
-  </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+          <h2>Adrenalin Tanpa Batas</h2>
+          <p>Rasakan sensasi berkendara dengan koleksi Superbike terbaik. Kondisi prima, siap mengaspal.</p>
+          <a href="#produk" class="btn-utama">Pilih Motor Anda</a>
+        </div>
+      </section>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-text">
-        <h2>Adrenalin Tanpa Batas</h2>
-        <p>Rasakan sensasi berkendara dengan koleksi Superbike terbaik. Kondisi prima, siap mengaspal.</p>
-        <a href="#produk" class="btn-utama">Pilih Motor Anda</a>
-      </div>
-    </section>
+      <section id="features">
+        <div class="feature-item">
+          <div class="icon">🏍️</div>
+          <h3>Unit Premium</h3>
+          <p>Motor tahun muda & terawat.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon">🛡️</div>
+          <h3>Full Insurance</h3>
+          <p>Berkendara aman & nyaman.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon">⚡</div>
+          <h3>Booking Cepat</h3>
+          <p>Proses mudah tanpa ribet.</p>
+        </div>
+      </section>
 
-    <section id="features">
-      <div class="feature-item">
-        <div class="icon">🏍️</div>
-        <h3>Unit Premium</h3>
-        <p>Motor tahun muda & terawat.</p>
-      </div>
-      <div class="feature-item">
-        <div class="icon">🛡️</div>
-        <h3>Full Insurance</h3>
-        <p>Berkendara aman & nyaman.</p>
-      </div>
-      <div class="feature-item">
-        <div class="icon">⚡</div>
-        <h3>Booking Cepat</h3>
-        <p>Proses mudah tanpa ribet.</p>
-      </div>
-    </section>
-
-    <article id="produk">
-      <div class="section-title">
-        <h2>Garasi Kami</h2>
-        <p>Pilih partner riding anda hari ini</p>
-      </div>
-
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Cari model motor (misal: Ducati)...">
-      </div>
-
-      <div class="produk-container" id="produkContainer">
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="R6.png" alt="Yamaha R6">
-          </div>
-          <div class="card-content">
-            <h3>Yamaha R6</h3>
-            <p class="price">Rp 950.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-r6.html" class="btn-sewa">Booking Sekarang</a>
-          </div>
+      <article id="produk">
+        <div class="section-title">
+          <h2>Garasi Kami</h2>
+          <p>Pilih partner riding anda hari ini</p>
         </div>
 
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="H2.png" alt="Kawasaki Ninja H2">
-          </div>
-          <div class="card-content">
-            <h3>Kawasaki Ninja H2</h3>
-            <p class="price">Rp 1.300.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-h2.html" class="btn-sewa">Booking Sekarang</a>
-          </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Cari model motor (misal: Ducati)..." />
         </div>
 
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="R1M.png" alt="Yamaha R1M">
+        <div class="produk-container" id="produkContainer">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/R6.png" alt="Yamaha R6" />
+            </div>
+            <div class="card-content">
+              <h3>Yamaha R6</h3>
+              <p class="price">Rp 950.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-r6.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
           </div>
-          <div class="card-content">
-            <h3>Yamaha R1M</h3>
-            <p class="price">Rp 1.000.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-r1m.html" class="btn-sewa">Booking Sekarang</a>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/H2.png" alt="Kawasaki Ninja H2" />
+            </div>
+            <div class="card-content">
+              <h3>Kawasaki Ninja H2</h3>
+              <p class="price">Rp 1.300.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-h2.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/R1M.png" alt="Yamaha R1M" />
+            </div>
+            <div class="card-content">
+              <h3>Yamaha R1M</h3>
+              <p class="price">Rp 1.000.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-r1m.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/CBR1000RR.png" alt="Honda CBR1000RR" />
+            </div>
+            <div class="card-content">
+              <h3>Honda CBR1000RR</h3>
+              <p class="price">Rp 900.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-cbr-1000rr.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/BMWS1000RR.png" alt="BMW S1000RR" />
+            </div>
+            <div class="card-content">
+              <h3>BMW S1000RR</h3>
+              <p class="price">Rp 1.500.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-bmw-s1000rr.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/PANIGALE V4.png" alt="Ducati Panigale V4" />
+            </div>
+            <div class="card-content">
+              <h3>Ducati Panigale V4</h3>
+              <p class="price">Rp 1.400.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-ducati-v4.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./assets/images/motor/GSX 1000RR.png" alt="Suzuki GSX 1000RR" />
+            </div>
+            <div class="card-content">
+              <h3>Suzuki GSX 1000RR</h3>
+              <p class="price">Rp 850.000 <span class="per-day">/ Hari</span></p>
+              <a href="./pages/booking/booking-gsx-1000rr.html" class="btn-sewa">Booking Sekarang</a>
+            </div>
           </div>
         </div>
+      </article>
 
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="CBR1000RR.png" alt="Honda CBR1000RR">
+      <section id="tentang">
+        <h2>Tentang C&C Rent</h2>
+        <div class="tentang-container">
+          <div class="info-box">
+            <h3>Profil</h3>
+            <p>
+              C&C Rent adalah project individu yang dikembangkan sebagai sarana pembelajaran dan eksplorasi desain sistem rental motor sport berbasis web. Project ini berfokus pada simulasi alur booking, user experience, serta tampilan
+              antarmuka yang realistis. Seluruh konten dan fitur pada website ini dibuat sebagai bahan pembelajaran dan bersifat simulasi, sehingga tidak mewakili layanan rental motor yang sebenarnya.
+            </p>
           </div>
-          <div class="card-content">
-            <h3>Honda CBR1000RR</h3>
-            <p class="price">Rp 900.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-cbr-1000rr.html" class="btn-sewa">Booking Sekarang</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="BMWS1000RR.png" alt="BMW S1000RR">
-          </div>
-          <div class="card-content">
-            <h3>BMW S1000RR</h3>
-            <p class="price">Rp 1.500.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-bmw-s1000rr.html" class="btn-sewa">Booking Sekarang</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="PANIGALE V4.png" alt="Ducati Panigale V4">
-          </div>
-          <div class="card-content">
-            <h3>Ducati Panigale V4</h3>
-            <p class="price">Rp 1.400.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-ducati-v4.html" class="btn-sewa">Booking Sekarang</a>
+          <div class="info-box">
+            <h3>Hubungi Kami</h3>
+            <br>
+            <ul class="kontak-list">
+              <li>📧 chandracornelius13@gmail.com</li>
+              <li>📞 08 9891 7178 2</li>
+              <li>📍 Jl. Bojong Rawalumbu, Bekasi</li>
+            </ul>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="card">
-          <div class="img-wrapper">
-            <img src="GSX 1000RR.png" alt="Suzuki GSX 1000RR">
-          </div>
-          <div class="card-content">
-            <h3>Suzuki GSX 1000RR</h3>
-            <p class="price">Rp 850.000 <span class="per-day">/ Hari</span></p>
-            <a href="booking-gsx-1000rr.html" class="btn-sewa">Booking Sekarang</a>
-          </div>
-        </div>
-      </div>
-    </article>
+    <footer>
+      <p>&copy; 2025 C&C Rent. Designed by Chandra (4524210022).</p>
+    </footer>
 
-    <section id="tentang">
-      <h2>Tentang C&C Rent</h2>
-      <div class="tentang-container">
-        <div class="info-box">
-          <h3>Profil</h3>
-          <p>C&C Rent adalah penyedia layanan sewa motor sport premium terpercaya. Kami berdedikasi memberikan pengalaman berkendara terbaik dengan armada yang selalu dalam kondisi showroom.</p>
-        </div>
-        <div class="info-box">
-          <h3>Hubungi Kami</h3>
-          <ul class="kontak-list">
-            <li>📧 chandracornelius13@gmail.com</li>
-            <li>📞 08 9891 7178 2</li>
-            <li>📍 Jl. Bojong Rawalumbu, Bekasi</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const cards = document.querySelectorAll(".card");
 
-  <footer>
-    <p>&copy; 2025 C&C Rent. Designed by Chandra (4524210022).</p>
-  </footer>
-
-  <script>
-    const searchInput = document.getElementById('searchInput');
-    const cards = document.querySelectorAll('.card');
-
-    searchInput.addEventListener('keyup', function() {
-      const filter = searchInput.value.toLowerCase();
-      cards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        if (title.includes(filter)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
+      searchInput.addEventListener("keyup", function () {
+        const filter = searchInput.value.toLowerCase();
+        cards.forEach((card) => {
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          if (title.includes(filter)) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
       });
-    });
-  </script>
-
-</body>
+    </script>
+  </body>
 </html>
