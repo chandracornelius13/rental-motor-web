@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="./asset/picture/logo (2).png" alt="C&C Rent Logo" width="250">
+    <img src="./assets/images/logo (2).png" alt="C&C Rent Logo" width="250">
   </a>
 
   <h1>🏍️ C&C RENT</h1>
