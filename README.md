@@ -37,7 +37,7 @@ Project ini berfokus pada **simulasi alur booking**, pengalaman pengguna (**User
 
 ## 📸 Preview
 
-<img width="100%" alt="C&C Rent Preview" src="https://via.placeholder.com/1200x600.png?text=Preview+Website+C%26C+Rent" />
+<img width="100%" alt="C&C Rent Preview" src="https://github.com/user-attachments/assets/50ca58a5-3885-4fb2-a55d-700aa9448e25"/>
 
 ---
 
